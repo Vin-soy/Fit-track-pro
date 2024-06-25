@@ -121,6 +121,33 @@ ALTER TABLE `tbl_activities`
   ADD CONSTRAINT `tbl_activities_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `tbl_user` (`tbl_user_id`);
 COMMIT;
 
+--Create database name fittrack
+
+CREATE TABLE workouts (
+    workout_id INT AUTO_INCREMENT PRIMARY KEY,
+    workout_name VARCHAR(255) NOT NULL
+);
+
+INSERT INTO workouts (workout_name) VALUES
+('Treadmill Running'),
+('Indoor Cycling'),
+('Jump Rope'),
+('Bodyweight Squats'),
+('Push-Ups'),
+('Planks'),
+('Yoga'),
+('Pilates'),
+('Dumbbell Bicep Curls'),
+('Kettlebell Swings'),
+('Jogging on Treadmill'),
+('Brisk Walking'),
+('Power Walking'),
+('Walking Lunges'),
+('Interval Running'),
+('Hill Climbing (Treadmill)'),
+('Walking with Dumbbells');
+
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
