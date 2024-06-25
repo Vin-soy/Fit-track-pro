@@ -1,3 +1,5 @@
+--Create database name fittrack
+
 CREATE TABLE IF NOT EXISTS workouts (
     workout_id INT AUTO_INCREMENT PRIMARY KEY,
     workout_name VARCHAR(255) NOT NULL
